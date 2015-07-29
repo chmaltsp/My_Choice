@@ -1,0 +1,219 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $darkblue;
+  margin-bottom: 3rem;
+}
+
+.border-right {
+  border-right: 6px solid $lightgrey;
+}
+
+// COLORFUL BUTTONS
+.slider {
+  margin-top: ($line-height-computed);
+}
+
+.mc-btn {
+  margin-bottom: ($line-height-computed*2);
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  margin-top: 20px;
+  max-height: 200px;
+  color: $white;
+  height: 125px;
+  border-radius: 5px;
+  img {
+    margin-right: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  h3,h4 {
+    margin: 0;
+    padding: 0px;
+    color: $white;
+    display: inline-block;
+    vertical-align: middle;
+  }
+//  .mc-btn-copy {
+//    display: inline-block;
+//    color: $white;
+//    position: absolute;
+//    h4 {
+//      margin-bottom: 0;
+//      padding: 0px;
+//      color: $white;
+//      display: inline-block;
+//      vertical-align: middle;
+//    }
+//
+//  }
+
+}
+#leadership {
+  .row {
+    margin-bottom: 2rem;
+  }
+}
+
+// SVG INTERACTIVE MAP
+.map {
+  svg {
+    display: block;
+    margin: auto;
+  }
+  margin: auto;
+}
+
+.mapTooltip {
+  position: fixed;
+  background-color: #fff;
+  moz-opacity: 0.70;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1000;
+  max-width: 200px;
+  display: none;
+  color: #343434;
+}
+
+//HOME PAGE BUTTONS STYLES
+#members {
+  @include setBgAndHover($blue);
+}
+
+#providers {
+  @include setBgAndHover($green);
+}
+
+// MEMBERS PAGE MC BUTTON STYLES
+#partnerBooklet {
+  @include setBgAndHover($green);
+}
+
+#memberHandbook {
+  @include setBgAndHover($orange);
+}
+
+#memberRights {
+  @include setBgAndHover($blue);
+}
+
+#grievance {
+  @include setBgAndHover ($green);
+}
+
+#selfSupport {
+  @include setBgAndHover ($orange);
+}
+
+#memberBenefits {
+  @include setBgAndHover ($darkblue);
+}
+// PROVIDER PAGE BUTTON STYLES
+
+#providerPortal {
+  @include setBgAndHover ($darkblue);
+}
+#providerHandbook {
+  @include setBgAndHover ($green);
+}
+#becomeProvider {
+  @include setBgAndHover ($orange);
+}
+#providerTraining {
+  @include setBgAndHover ($blue);
+}
+#contractRep {
+  @include setBgAndHover ($green);
+}
+#faq {
+  @include setBgAndHover ($darkblue);
+}
+
+// NEWS AND ANNOUCEMENTS STYLES
+.postbox {
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  margin-bottom: $line-height-computed;
+  background-color: lighten($lightgrey, 8%);
+  @include roundedBorder(5px);
+  img {
+    @include roundedBorder(5px);
+    height: 200px;
+  }
+}
+
+// ACCORDION STYLES
+#accordion {
+  padding: 0;
+  .panel-default {
+    margin-top: 0;
+  }
+  .panel-heading {
+    text-align: center;
+    background-color: $lighterblue;
+    color: white;
+  }
+  div.panel-body {}
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// GOOGLE MAP STYLES
+#map-canvas {
+  margin-bottom: 0;
+  height: 400px;
+  width: 100%;
+  p {
+    margin: 0;
+  }
+}
+
+//CONTACT FORM STYLES
+#contactContainer {
+  margin-bottom: ($line-height-computed * 3);
+  button {
+    float: none;
+    margin: auto;
+  }
+}
+
+// LAST ROW OF PAGE BOTTOM MARGIN
+.last {
+  margin-bottom: ($line-height-computed *2);
+}
+
+//Quick Links Page
+//.list-group-item-heading {
+//    color:$darkgray;
+//}
+#values {
+
+    color: $lighterblue;
+  }
+
+#philosophy {
+  h4 {
+    color: $orange;
+  }
+}
+#mission {
+  h4 {
+    color:$green;
+  }
+}

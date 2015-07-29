@@ -1,0 +1,35 @@
+footer {
+    h4 {
+        color: $white;
+        margin-bottom: ($line-height-computed /2);
+    }
+    background-color: $darkblue;
+    color: $white;
+    .row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    p {
+       margin: 0;
+    }
+    .social-btn {
+        margin-top: 15px;
+        margin-left: 0px; 
+        margin-right: 8px;
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            float:left;
+            display: inline;
+            width: 50%;
+            a{
+                color: $white;
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

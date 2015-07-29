@@ -1,0 +1,51 @@
+.navbar {
+    background-color: $darkblue;
+    border: none;
+    border-radius: 0px;
+    .icon-bar {
+        background-color: $white;
+    }
+    margin-bottom: 0;
+}
+.navbar-collapse {
+    padding: 0;
+}
+nav {
+    .nav {
+        li {
+
+            a {
+                color: $white;
+                &:hover {
+                    color:$orange;
+                    background-color: transparent;
+                }
+            }
+            display: inline-block;
+        }
+    }
+}
+
+.logo {
+    max-width: 220px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.vcenter {
+    line-height: 8;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.social-btn {
+    margin-left: 7px;
+    max-width: 35px;
+}
+#menu-item-44 {
+    background-color: $lighterblue;
+}
+#menu-item-45 {
+    background-color: $green;
+}
