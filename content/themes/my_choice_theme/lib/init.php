@@ -19,7 +19,8 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'primary_navigation' => __('Primary Navigation', 'sage'),
+    'about-us-submenu' => __('About Us Subnav')
   ]);
     $args = array(
 
@@ -68,13 +69,6 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
-  register_sidebar([
-    'name'          => __('About Us', 'sage'),
-    'id'            => 'sidebar-about',
-    'before_widget' => '<section id="sidebar-about" class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ]);
+
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');

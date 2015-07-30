@@ -30,4 +30,15 @@
             </nav>
         </div>
     </div>
+    <?php if ( is_page('about-us') ) : ?>
+
+    <div id="about-us-subnav">
+      <div class="container">
+                    <nav class="collapse navbar-collapse" role="navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'about-us-submenu', 'container_class' => 'about-us-nav' ) ); ?>
+      </nav>
+          </div>
+    </div>
+      <?php endif; ?>
+
 </header>

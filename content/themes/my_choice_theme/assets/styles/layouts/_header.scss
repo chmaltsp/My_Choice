@@ -25,7 +25,52 @@ nav {
         }
     }
 }
+#about-us-subnav {
+  background-color: $blue;
+  position: relative;
+  border: 0px solid #c2e1f5;
+  &:before, &:after {
+  bottom: 100%;
+	left: 26%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  }
+  &:before {
+    border-color: rgba(194, 225, 245, 0);
+	
+	border-width: 16px;
+	margin-left: -16px;
+  }
+  &:after {
+    border-color: rgba(41, 93, 128, 0);
+	border-bottom-color: #295d80;
+	border-width: 15px;
+	margin-left: -15px;
+  }
 
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    min-height: 50px;
+  }
+  li {
+    color: $white;
+    display: inline;
+    list-style:none;
+    a {
+      &:hover {
+        color:$orange;
+      }
+      line-height: 49px;     padding: 10px 15px 10px 15px;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
 .logo {
     max-width: 220px;
     padding-bottom: 10px;

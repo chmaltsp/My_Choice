@@ -54,7 +54,15 @@ function display_sidebar() {
       [
         'is_404',
         'is_front_page',
-        ['is_page', 'members']
+        'is_page',
+        ['is_page', 'providers'],
+        ['is_page', 'contact-us'],
+        ['is_page', 'quick-links'],
+        ['is_page', 'careers'],
+        ['is_page', 'about-us'],
+        ['is_page', 'members'],
+        ['is_page', 'contact-us'],
+        ['is_page_template', 'template-custom.php']
 
       ]
     );

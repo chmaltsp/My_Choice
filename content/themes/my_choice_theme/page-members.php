@@ -4,33 +4,32 @@
     <?php endwhile; ?>
       <div class="row">
         <div class="col-xs-12 col-md-4">
-
-          <p>My Choice Family Care is your source for <b>Long-Term Support You Can Trust!</b> Since 2000, we have provided the Family Care program to over 21,720 people in Milwaukee County. Today, we serve over 8,300 members.</p>
-          <p>
-            We are committed to helping the people in our community remain as independent as possible.We believe that if you need long-term care services, you should be able to get them when you need them and at a place you choose.</p>
-
+          <?php the_field('members_description_col_1'); ?>
 
         </div>
 
         <div class="col-xs-12 col-md-4">
-          <p> Our goal is to work with you to design a plan to provide you with cost-effective care that meets your outcomes. We are a financially strong organization that strives to ensure that our members receive services that are delivered the Right Way for each Person – at the Right Time – in the Right Place – for the Right Cost and for the Right Reasons. View movie below to see how My Choice Family Care works with you and your family to be creative and keep you as independent as possible.</p>
+          <?php the_field('members_description_col_2'); ?>
         </div>
         <div class="col-xs-12 col-md-4">
           <h4>Member Portal Login</h4>
+          <a href="<?php the_field('member_login_link'); ?>">
           <div class="mc-btn" id="partnerBooklet">
-            <img src="/content/themes/my_choice_theme/assets/images/member_btn.jpg" alt="Members" />
-            <div class="mc-btn-copy">
+            <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_6.jpg" alt="Members" />
+
               <h4>Login to Portal Here</h4>
-            </div>
+
           </div>
+        </a>
         </div>
       </div>
 <div class="row">
+  <?php while (have_posts()) : the_post(); ?>
         <h2>Member Resources</h2>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <a href="http://mychoice.localhost/content/uploads/2015/07/Being-A-Full-Partner-booklet.pdf" target="_blank">
+          <a href="<?php the_field('full_partner_handbook'); ?>" target="_blank">
             <div class="mc-btn" id="partnerBooklet">
-              <img src="/content/themes/my_choice_theme/assets/images/member_btn.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_4.jpg" alt="Members" />
 
                 <h4>Being a full partner handbook</h4>
 
@@ -41,7 +40,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="#">
             <div class="mc-btn" id="memberHandbook">
-              <img src="/content/themes/my_choice_theme/assets/images/member_btn.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_1.jpg" alt="Members" />
 
                 <h4>Member Handbook</h4>
 
@@ -52,7 +51,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="<?php echo get_page_link(101) ?>">
             <div class="mc-btn" id="memberRights">
-              <img src="/content/themes/my_choice_theme/assets/images/member_btn.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_2.jpg" alt="Members" />
 
                 <h4>Member Rights <br/>and Responsibilities</h4>
 
@@ -63,7 +62,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="<?php echo get_page_link(97) ?>">
             <div class="mc-btn" id="grievance">
-              <img src="/content/themes/my_choice_theme/assets/images/member_btn.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_5.jpg" alt="Members" />
 
                 <h4>Grievance and Appeals</h4>
 
@@ -84,7 +83,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="#">
             <div class="mc-btn" id="memberBenefits">
-              <img src="/content/themes/my_choice_theme/assets/images/member_btn.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_3.jpg" alt="Members" />
 
                 <h4>Member Benefits</h4>
 
@@ -92,12 +91,18 @@
             </div>
           </a>
         </div>
+
       </div>
 
       <div class="row">
+        <div class="col-xs-12">
+            <h2><?php the_field('new_to_family_care_headline'); ?></h2>
+            <?php the_field('new_to_family_care_text'); ?>
+
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h2>New to family care?</h2>
-          <h4>Find a family care resource center today</h4>
+
+          <h4><?php the_field('county_accordion_heading'); ?></h4>
           <div class="panel-group col-lg-9 " id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="kenoshaHeading">
@@ -267,47 +272,38 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h2>Member Success Stories</h2>
-          <h4>Look at what some of our members have to say</h4>
-          <blockquote>Eiusmod enim nam aliquip transferrem, e minim doctrina, nam ex aliqua nisi legam ubi ubi irure quid do nescius est ut nisi consequat, te quid fabulaslegam ubi ubi irure quid do
-            <p> <i>-- John Smith, member since 2005</i> </p>
+          <h2><?php the_field('success_stories_headline'); ?></h2>
+          <h4><?php the_field('success_stories_subheadline'); ?></h4>
+          <?php if( have_rows('success_stories') ): ?>
+             <?php while ( have_rows('success_stories') ) : the_row(); ?>
+          <blockquote><?php the_sub_field('story_text'); ?>
+            <p> <i>-- <?php the_sub_field('name'); ?> </i> </p>
+            <a href="<?php the_sub_field('story_link'); ?>">Read More</a>
           </blockquote>
-          <blockquote>Eiusmod enim nam aliquip transferrem, e minim doctrina, nam ex aliqua nisi legam ubi ubi irure quid do nescius est ut nisi consequat,
-            <p> <i>-- John Smith, member since 2005</i> </p>
-          </blockquote>
+        <?php endwhile; ?>
+      <?php endif; ?>
         </div>
       </div>
 
       <div class="row last">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq">
           <h2>Frequently Asked Questions</h2>
+          <?php if( have_rows('faq') ): ?>
+             <?php while ( have_rows('faq') ) : the_row(); ?>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4>Question 1</h4>
+              <h4><?php the_sub_field('faq_question'); ?></h4>
             </div>
             <div class="panel panel-body">
-              <p>Aut ea sint pariatur. Est legam imitarentur, amet ne in minim litteris et ex aut concursionibus ad elit firmissimum mentitum culpa laborum. Culpa voluptate aut exquisitaque. Fabulas velit malis deserunt legam. Malis te quamquam ne culpa.
+              <p><?php the_sub_field('faq_answer'); ?>
               </p>
             </div>
-            <div class="panel-heading">
-              <h4>Question 2</h4>
-            </div>
-            <div class="panel panel-body">
-              <p>Aut ea sint pariatur. Est legam imitarentur, amet ne in minim litteris et ex aut concursionibus ad elit firmissimum mentitum culpa laborum. Culpa voluptate aut exquisitaque. Fabulas velit malis deserunt legam. Malis te quamquam ne culpa.
-              </p>
-            </div>
-            <div class="panel-heading">
-              <h4>Question 3</h4>
-            </div>
-            <div class="panel panel-body">
-              <p>Aut ea sint pariatur. Est legam imitarentur, amet ne in minim litteris et ex aut concursionibus ad elit firmissimum mentitum culpa laborum. Culpa voluptate aut exquisitaque. Fabulas velit malis deserunt legam. Malis te quamquam ne culpa.
-              </p>
-            </div>
-
-
           </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
 
         </div>
 
 
       </div>
+  <?php endwhile; ?>
