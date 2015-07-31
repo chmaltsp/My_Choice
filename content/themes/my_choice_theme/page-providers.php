@@ -20,6 +20,7 @@
     <?php endwhile; endif; ?>
     <?php wp_reset_query(); ?>
     <?php while (have_posts()) : the_post(); ?>
+    </div>
 <div class="row">
 
   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
