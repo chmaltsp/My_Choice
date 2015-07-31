@@ -34,7 +34,7 @@ content/backup-db/
 content/backups/
 content/blogs.dir/
 content/cache/
-content/uploads/
+
 content/upgrade/
 content/wp-cache-config.php
 
@@ -62,6 +62,3 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-
-
-
