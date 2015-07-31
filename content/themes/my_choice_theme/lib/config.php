@@ -55,6 +55,7 @@ function display_sidebar() {
         'is_404',
         'is_front_page',
         'is_page',
+        'is_post',
         ['is_page', 'providers'],
         ['is_page', 'contact-us'],
         ['is_page', 'quick-links'],
