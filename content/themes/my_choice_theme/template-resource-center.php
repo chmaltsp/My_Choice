@@ -9,6 +9,7 @@
 
  <div class="col-xs-12 col-md-6">
    <?php get_template_part('templates/content', 'page'); ?>
+   <a href="<?php the_field('download_provider_directory_file_upload'); ?>"><h4><?php the_field('download_provider_directory_link_text'); ?></h4></a>
  </div>
  <div class="col-xs-12 col-md-6 ">
    <?php

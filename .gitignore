@@ -12,7 +12,7 @@ node_modules
 
 # Ignore config
 local-config.php
-
+wp-config.php
 
 # Operating system files
 .Spotlight-V100
@@ -34,7 +34,7 @@ content/backup-db/
 content/backups/
 content/blogs.dir/
 content/cache/
-
+content/uploads/
 content/upgrade/
 content/wp-cache-config.php
 
