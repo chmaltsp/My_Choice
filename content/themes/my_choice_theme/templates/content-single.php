@@ -9,7 +9,7 @@
     <div class="row">
         <div class="entry-content">
 
-        <div class="col-xs-12">
+        <div class="col-xs-12 blog-img">
 
           <?php
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
