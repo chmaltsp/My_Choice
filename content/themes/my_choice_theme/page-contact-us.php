@@ -1,10 +1,10 @@
 <?php while (have_posts()) : the_post(); ?>
 <?php get_template_part( 'templates/page', 'header'); ?>
 <?php get_template_part( 'templates/content', 'page'); ?>
-<?php endwhile; ?>
+
 <div class="row last">
     <div class="col-xs-12 col-sm-12 col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
-        <h3 class="text-center">If you would like to get in touch please fill out this form and we will reach out to you soon!</h3>
+        <h3 class="text-center"><?php the_field('contact_us_headline'); ?></h3>
         <form id="contactContainer">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -31,6 +31,7 @@
 </div>
 </div>
 </div>
+<?php endwhile; ?>
 <div class="container-fluid">
     <div class="col-xs-12" id="map-canvas"></div>
 </div>
