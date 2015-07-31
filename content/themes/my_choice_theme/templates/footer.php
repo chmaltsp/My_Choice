@@ -15,11 +15,11 @@
             </div>
             <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 ">
                 <h4>Connect with us</h4>
-                <a href="#"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/fb.png" alt="Like us on Facebook" />
+                <a href="<?php the_field('facebook_page', 'option'); ?>"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/fb.png" alt="Like us on Facebook" />
                 </a>
-                <a href="#"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/twitter.png" alt="Follow us onTwitter" />
+                <a href="<?php the_field('twitter_page', 'option'); ?>"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/twitter.png" alt="Follow us onTwitter" />
                 </a>
-                <a href="#"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/linkedin.png" alt="Find us on LinkedIn" />
+                <a href="<?php the_field('linkedin_page', 'option'); ?>"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/linkedin.png" alt="Find us on LinkedIn" />
                 </a>
             </div>
 

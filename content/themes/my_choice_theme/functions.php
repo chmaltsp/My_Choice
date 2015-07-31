@@ -20,6 +20,16 @@ $sage_includes = [
   'lib/extras.php',                // Custom functions
   'lib/wp_bootstrap_navwalker.php' //Bootstrap nav Walker
 ];
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array (
+      'page_title' => 'Theme Options',
+      'menu_itle' => 'Theme Options',
+      'menu_slug' =>  'theme-options'
+));
+
+}
+
 
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {

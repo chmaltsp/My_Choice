@@ -55,7 +55,7 @@
 <?php endif; ?>
             </section>
           </div>
-          <div class="row">
+          <div id="govboard" class="row">
             <div class="col-xs-12 col-sm-6">
               <h3><?php the_field('governing_board_headline'); ?></h3>
                 <?php the_field('governing_board_text') ?>
