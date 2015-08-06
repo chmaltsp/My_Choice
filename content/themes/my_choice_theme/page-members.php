@@ -81,11 +81,11 @@
           </a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <a href="#">
+          <a href="<?php the_field('member_benefits_link'); ?>">
             <div class="mc-btn" id="memberBenefits">
               <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_3.jpg" alt="Members" />
 
-                <h4>Member Benefits</h4>
+                <h4><?php the_field('member_benefits_button'); ?></h4>
 
 
             </div>
@@ -103,6 +103,9 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
           <h4><?php the_field('county_accordion_heading'); ?></h4>
+          <p>
+            <?php the_field('county_accordion_text'); ?>
+          </p>
           <div class="panel-group col-lg-9 " id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="kenoshaHeading">

@@ -20,7 +20,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
-    'about-us-submenu' => __('About Us Subnav')
+    'about-us-submenu' => __('About Us Subnav'),
+    'members-submenu' => __('Members Subnav')
   ]);
     $args = array(
 

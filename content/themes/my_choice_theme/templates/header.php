@@ -34,13 +34,23 @@
     </div>
     <?php if ( is_page('about-us') ) : ?>
 
-    <div id="about-us-subnav">
+    <div id="about-us-subnav" class="subnav">
       <div class="container">
                     <nav class="collapse navbar-collapse" role="navigation">
-        <?php wp_nav_menu( array( 'theme_location' => 'about-us-submenu', 'container_class' => 'about-us-nav' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'about-us-submenu', 'container_class' => 'subnav' ) ); ?>
       </nav>
           </div>
     </div>
       <?php endif; ?>
+      <?php if ( is_page('members') ) : ?>
+
+      <div id="members-subnav" class="subnav">
+        <div class="container">
+                      <nav class="collapse navbar-collapse" role="navigation">
+          <?php wp_nav_menu( array( 'theme_location' => 'members-submenu', 'container_class' => 'subnav' ) ); ?>
+        </nav>
+            </div>
+      </div>
+        <?php endif; ?>
 
 </header>
