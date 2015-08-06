@@ -23,7 +23,7 @@
         </a>
         </div>
       </div>
-<div class="row">
+<div class="row" id="resources">
   <?php while (have_posts()) : the_post(); ?>
         <h2>Member Resources</h2>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -94,7 +94,7 @@
 
       </div>
 
-      <div class="row">
+      <div class="row" id="resource-centers">
         <div class="col-xs-12">
             <h2><?php the_field('new_to_family_care_headline'); ?></h2>
             <?php the_field('new_to_family_care_text'); ?>
@@ -288,7 +288,7 @@
         </div>
       </div>
 
-      <div class="row last">
+      <div class="row last" id="faq">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq">
           <h2>Frequently Asked Questions</h2>
           <?php if( have_rows('faq') ): ?>
