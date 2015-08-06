@@ -288,7 +288,7 @@
         </div>
       </div>
 
-      <div class="row last" id="faq">
+      <div class="row last" id="members-faq">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq">
           <h2>Frequently Asked Questions</h2>
           <?php if( have_rows('faq') ): ?>
