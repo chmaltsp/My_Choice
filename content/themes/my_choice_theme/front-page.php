@@ -46,7 +46,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h2>News and Annoucements</h2>
+    <h2><?php the_field('news_and_announcements_headline'); ?></h2>
   </div>
   <?php query_posts( 'cat=1&showposts=4'); ?>
   <?php if (have_posts() ) : while ( have_posts()) : the_post(); ?>

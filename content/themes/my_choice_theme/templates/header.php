@@ -6,11 +6,11 @@
             </div>
 
             <div class="hidden-xs col-xs-4 col-xs-offset-1  col-sm-3 col-sm-offset-6 col-md-3 col-md-offset-6 col-lg-2 col-lg-offset-6 social vcenter">
-                <a href="<?php the_field('facebook_page', 'option'); ?>"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/fb.png" alt="Like us on Facebook" />
+                <a href="<?php the_field('facebook_page', 'option'); ?>"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/fb.png" alt="Like us on Facebook" target="_blank"/>
                 </a>
-                <a href="<?php the_field('twitter_page', 'option'); ?>"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/twitter.png" alt="Follow us onTwitter" />
+                <a href="<?php the_field('twitter_page', 'option'); ?>"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/twitter.png" alt="Follow us onTwitter" target="_blank"/>
                 </a>
-                <a href="<?php the_field('linkedin_page', 'option'); ?>"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/linkedin.png" alt="Find us on LinkedIn" />
+                <a href="<?php the_field('linkedin_page', 'option'); ?>"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/linkedin.png" alt="Find us on LinkedIn" target="_blank"/>
                 </a>
             </div>
 
@@ -29,6 +29,7 @@
 
             <nav class="collapse navbar-collapse" role="navigation">
                 <?php if (has_nav_menu( 'primary_navigation')) : wp_nav_menu([ 'theme_location'=> 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']); endif; ?>
+
             </nav>
         </div>
     </div>

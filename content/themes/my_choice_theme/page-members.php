@@ -38,11 +38,11 @@
           </a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <a href="#">
+          <a href="<?php the_field('member_handbook_download'); ?>">
             <div class="mc-btn" id="memberHandbook">
               <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_1.jpg" alt="Members" />
 
-                <h4>Member Handbook</h4>
+                <h4><?php the_field('member_handbook_button'); ?></h4>
 
 
             </div>
@@ -102,7 +102,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-          <h4><?php the_field('county_accordion_heading'); ?></h4>
+          <h2><?php the_field('county_accordion_heading'); ?></h2>
           <p>
             <?php the_field('county_accordion_text'); ?>
           </p>
