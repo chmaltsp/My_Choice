@@ -41,10 +41,7 @@
           <a href="<?php the_field('member_handbook_download'); ?>">
             <div class="mc-btn" id="memberHandbook">
               <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_1.jpg" alt="Members" />
-
-                <h4><?php the_field('member_handbook_button'); ?></h4>
-
-
+                <h4><?php the_field('member_handbook'); ?></h4>
             </div>
           </a>
         </div>
