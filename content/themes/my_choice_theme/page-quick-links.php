@@ -10,7 +10,9 @@
 <div class="list-group">
 <h4 class="list-group-item-heading"><?php the_sub_field('title'); ?></h4>
 <a class="list-group-item-text" href="<?php the_sub_field('organization_link'); ?>" target="_blank"><?php the_sub_field('organization_link'); ?></a>
+
 <?php the_sub_field('organization_description'); ?>
+
 </div>
 </div>
 <?php if($i % 2 == 0): ?>

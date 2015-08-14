@@ -1,8 +1,4 @@
-</div>
-</div>
-<div class="container-fluid">
-    <div class="col-xs-12" id="map-canvas"></div>
-</div>
+
 <div class="container">
 
 
@@ -41,6 +37,11 @@
 </div>
 </div>
 <?php endwhile; ?>
+</div>
+
+<div class="container-fluid">
+    <div class="col-xs-12" id="map-canvas"></div>
+</div>
 
 <div class="container">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK6leCAPVJsU0nm4wShIX432Tz65_Uccw">
