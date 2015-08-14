@@ -1,3 +1,11 @@
+</div>
+</div>
+<div class="container-fluid">
+    <div class="col-xs-12" id="map-canvas"></div>
+</div>
+<div class="container">
+
+
 <?php while (have_posts()) : the_post(); ?>
 <?php get_template_part( 'templates/page', 'header'); ?>
 <?php get_template_part( 'templates/content', 'page'); ?>
@@ -32,9 +40,7 @@
 </div>
 </div>
 <?php endwhile; ?>
-<div class="container-fluid">
-    <div class="col-xs-12" id="map-canvas"></div>
-</div>
+
 <div class="container">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK6leCAPVJsU0nm4wShIX432Tz65_Uccw">
     </script>

@@ -28,7 +28,7 @@
     <a href="<?php the_field('portal_link'); ?>
   ">
       <div class="mc-btn" id="providerPortal">
-        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_1.jpg" alt="Provider Portal" />
+        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_10.jpg" alt="Provider Portal" />
         <h3>Provider Portal</h3>
       </div>
     </a>
@@ -37,7 +37,7 @@
   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
     <a href="<?php the_field('provider_handbook');?>">
       <div class="mc-btn" id="providerHandbook">
-        <img src="<?php echo  get_template_directory_uri() ?>//assets/images/btn_2.jpg" alt="Members" />
+        <img src="<?php echo  get_template_directory_uri() ?>//assets/images/btn_12.jpg" alt="Members" />
         <h3>Provider Handbook</h3>
 
       </div>
@@ -50,7 +50,7 @@
     <a href="<?php the_field('become_link'); ?>
   ">
       <div class="mc-btn" id="becomeProvider">
-        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_3.jpg" alt="becomeProvider" />
+        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_13.jpg" alt="becomeProvider" />
         <h3>Become a Provider</h3>
 
       </div>
@@ -59,7 +59,7 @@
   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
     <a href="<?php the_field('provider_training'); ?>">
       <div class="mc-btn" id="providerTraining">
-        <img src="<?php echo  get_template_directory_uri() ?>//assets/images/btn_4.jpg" alt="Members" />
+        <img src="<?php echo  get_template_directory_uri() ?>//assets/images/btn_14.jpg" alt="Members" />
         <h3>Provider Training</h3>
 
       </div>
@@ -72,7 +72,7 @@
     <a href="<?php the_field('contracts_rep'); ?>
   ">
       <div class="mc-btn" id="contractRep">
-        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_5.jpg" alt="Your Contract Representative" />
+        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_15.jpg" alt="Your Contract Representative" />
         <h3>Your Contracts Representative</h3>
 
       </div>
@@ -81,7 +81,7 @@
   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
     <a href="<?php the_field('faq_link'); ?>">
       <div class="mc-btn" id="faq">
-        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_6.jpg" alt="Members" />
+        <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_16.jpg" alt="Members" />
         <h3>Frequently Asked Questions</h3>
 
       </div>

@@ -29,7 +29,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="<?php the_field('full_partner_handbook'); ?>" target="_blank">
             <div class="mc-btn" id="partnerBooklet">
-              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_4.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_8.jpg" alt="Members" />
 
                 <h4>Being a full partner handbook</h4>
 
@@ -70,9 +70,9 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="<?php echo get_page_link(103) ?>">
             <div class="mc-btn" id="selfSupport">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/member_btn.jpg" alt="Members" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/btn_7.jpg" alt="Members" />
 
-                <h4>Self-Directed Support</h4>
+                <h4>Self-Directed Supports</h4>
 
             </div>
           </a>
@@ -80,7 +80,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <a href="<?php the_field('member_benefits_link'); ?>">
             <div class="mc-btn" id="memberBenefits">
-              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_3.jpg" alt="Members" />
+              <img src="<?php echo  get_template_directory_uri() ?>/assets/images/btn_9.jpg" alt="Members" />
 
                 <h4><?php the_field('member_benefits_button'); ?></h4>
 
