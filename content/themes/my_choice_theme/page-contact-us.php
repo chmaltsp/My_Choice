@@ -25,7 +25,7 @@ $message_sent    = "Thanks! Your message has been sent.";
 $name = $_POST['message_name'];
 $email = $_POST['message_email'];
 $message = $_POST['message_text'];
-$phone_number = $_POST('message_phone_number');
+$phone_number = $_POST['message_phone_number'];
 $human = $_POST['message_human'];
 
 //php mailer variables
