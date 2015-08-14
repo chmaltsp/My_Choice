@@ -1,5 +1,64 @@
 
 <div class="container">
+  <?php
+
+    //response generation function
+    $response = "";
+
+    //function to generate response
+    function my_contact_form_generate_response($type, $message){
+
+      global $response;
+
+      if($type == "success") $response = "<div class='success'>{$message}</div>";
+      else $response = "<div class='error'>{$message}</div>";
+
+    }
+    //response messages
+$not_human       = "Human verification incorrect.";
+$missing_content = "Please supply all information.";
+$email_invalid   = "Email Address Invalid.";
+$message_unsent  = "Message was not sent. Try Again.";
+$message_sent    = "Thanks! Your message has been sent.";
+
+//user posted variables
+$name = $_POST['message_name'];
+$email = $_POST['message_email'];
+$message = $_POST['message_text'];
+$phone_number = $_POST('message_phone_number');
+$human = $_POST['message_human'];
+
+//php mailer variables
+$to = get_option('admin_email');
+$subject = "Someone sent a message from ".get_bloginfo('name');
+$headers = 'From: '. $email . "\r\n" .
+  'Reply-To: ' . $email . "\r\n";
+
+  if(!$human == 0){
+    if($human != 2) my_contact_form_generate_response("error", $not_human); //not human!
+    else {
+
+      //validate email
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        my_contact_form_generate_response("error", $email_invalid);
+      else //email is valid
+      {
+        //validate presence of name and message
+        if(empty($name) || empty($message)){
+          my_contact_form_generate_response("error", $missing_content);
+        }
+        else //ready to go!
+        {
+          $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+          if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
+          else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+        }
+      }
+    }
+  }
+  else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
+
+  ?>
 
 
 <?php while (have_posts()) : the_post(); ?>
@@ -10,23 +69,28 @@
     <div class="col-xs-12 col-sm-12 col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
       <?php the_field('additional_info'); ?>
         <h3 class="text-center"><?php the_field('contact_us_headline'); ?></h3>
-        <form id="contactContainer">
+         <?php echo $response; ?>
+        <form id="contactContainer" action="<?php the_permalink(); ?>" method="post" >
             <div class="form-group">
                 <label for="name">Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                <input class="form-control" id="name" name="message_name" type="text" placeholder="Enter your name" value="<?php echo esc_attr($_POST['message_name']); ?>">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input class="form-control" id="email" type="email" placeholder="Enter your Email">
+                <label for="message_email">Email</label>
+                <input class="form-control" id="email" type="email" placeholder="Enter your Email" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>">
             </div>
             <div class="form-group">
-                <label for="phoneNumber">Phone Number</label>
-                <input class="form-control" id="phoneNumber" type="tel" placeholder="Enter your phone number"> </div>
+                <label for="message_phone_number">Phone Number</label>
+                <input class="form-control" id="phoneNumber" type="tel" placeholder="Enter your phone number" name="message_phone_number" value="<?php echo esc_attr($_POST['message_phone_number']); ?>"> </div>
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" rows="4" id="message" placeholder="Enter your message"></textarea>
+                <label for="message_text">Message</label>
+                <textarea class="form-control" rows="4" id="message" name="message_text" placeholder="Enter your message"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
             </div>
             <div class="form-group">
+                <label for="message_human">Verify that you are a human</label>
+                <input class="form-control" id="humanVerification" type="text" placeholder="" name="message_human" style="width:60px; display:inline-block;" value="<?php echo esc_attr($_POST['message_human']); ?>"><span>+ 3 = 5</span></div>
+            <div class="form-group">
+              <input type="hidden" name="submitted" value="1">
                 <button class="center-block btn btn-primary btn-lg" type="submit">Submit</button>
             </div>
         </form>
