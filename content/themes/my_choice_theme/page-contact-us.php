@@ -10,8 +10,8 @@
 
       global $response;
 
-      if($type == "success") $response = "<div class='success'>{$message}</div>";
-      else $response = "<div class='error'>{$message}</div>";
+      if($type == "success")  $response = "<h4 class='parsley-success'>{$message}</h4>";
+      else $response = "<h4 class='parsley-error'>{$message}</h4>";
 
     }
     //response messages
@@ -73,25 +73,25 @@ $headers = 'From: '. $email . "\r\n" .
         <form id="contactContainer" action="<?php the_permalink(); ?>" method="post" >
             <div class="form-group">
                 <label for="name">Name</label>
-                <input class="form-control" id="name" name="message_name" type="text" placeholder="Enter your name" value="<?php echo esc_attr($_POST['message_name']); ?>">
+                <input class="form-control" id="name" name="message_name" type="text" placeholder="Enter your name" value="<?php echo esc_attr($_POST['message_name']); ?>" required>
             </div>
             <div class="form-group">
                 <label for="message_email">Email</label>
-                <input class="form-control" id="email" type="email" placeholder="Enter your Email" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>">
+                <input class="form-control" id="email" type="email" placeholder="Enter your Email" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>" required>
             </div>
             <div class="form-group">
                 <label for="message_phone_number">Phone Number</label>
-                <input class="form-control" id="phoneNumber" type="tel" placeholder="Enter your phone number" name="message_phone_number" value="<?php echo esc_attr($_POST['message_phone_number']); ?>"> </div>
+                <input class="form-control" id="phoneNumber" type="tel" placeholder="Enter your phone number" name="message_phone_number" value="<?php echo esc_attr($_POST['message_phone_number']); ?>" required> </div>
             <div class="form-group">
                 <label for="message_text">Message</label>
-                <textarea class="form-control" rows="4" id="message" name="message_text" placeholder="Enter your message"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+                <textarea class="form-control" rows="4" id="message" name="message_text" placeholder="Enter your message" required><?php echo esc_textarea($_POST['message_text']); ?></textarea>
             </div>
             <div class="form-group">
                 <label for="message_human">Verify that you are a human</label>
                 <input class="form-control" id="humanVerification" type="text" placeholder="" name="message_human" style="width:60px; display:inline-block;" value="<?php echo esc_attr($_POST['message_human']); ?>"><span>+ 3 = 5</span></div>
             <div class="form-group">
               <input type="hidden" name="submitted" value="1">
-                <button class="center-block btn btn-primary btn-lg" type="submit">Submit</button>
+                <button class="center-block btn btn-primary btn-lg" type="submit" id="contactSubmit">Submit</button>
             </div>
         </form>
 

@@ -10,11 +10,12 @@
     "modernizr": "2.8.2",
     "bootstrap-sass-official": "3.3.4",
     "raphael": "~2.1.4",
-    "jquery-mapael": "~1.0.1"
+    "jquery-mapael": "~1.0.1",
+    "parsleyjs": "~2.1.3"
   },
   "overrides": {
-    "raphael" : {
-        "main": "./raphael.js"
+    "raphael": {
+      "main": "./raphael.js"
     },
     "modernizr": {
       "main": "./modernizr.js"
@@ -42,6 +43,5 @@
       ]
     }
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

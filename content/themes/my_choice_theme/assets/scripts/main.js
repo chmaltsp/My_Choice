@@ -19,8 +19,7 @@
         'common': {
             init: function () {
                 // JavaScript to be fired on all pages
-
-
+                $('#contactContainer').parsley();
 
             },
             finalize: function () {
@@ -31,17 +30,20 @@
                     maxHeight = Math.max.apply(null, heights);
 
                 $(".postbox").height(maxHeight);
+                $('#contactSubmit').click(function(){
+                    $('#contactContainer')[0].reset();
+                });
                 // JavaScript to be fired on all pages, after page specific JS is fired
             }
         },
         // Home page
         'home': {
             init: function () {
-                
+
                 // JavaScript to be fired on the home page
             },
             finalize: function () {
-                
+
                 // JavaScript to be fired on the home page, after the init JS
             }
         },

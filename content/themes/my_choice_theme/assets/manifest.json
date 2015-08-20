@@ -28,6 +28,9 @@
     },
     "raphael.js": {
       "bower": ["raphael"]
+    },
+    "parsley.js": {
+      "bower": ["parsleyjs"]
     }
   },
 

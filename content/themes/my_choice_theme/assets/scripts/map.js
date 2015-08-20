@@ -33,8 +33,8 @@ $(function(){
             "Sheboygan" : {
                 tooltip : {
                     content : "Sheboygan Resource Center<br/>ADRC of Sheboygan County
-<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Phone: (800) 596-1919</b><br/>
-<b>TTY/TDD/Relay: (920)467-4195</b>"
+<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Phone: 1-800-596-1919</b><br/>
+<b>TTY/TDD/Relay: (920) 467-4195</b>"
                 },
                 attrs: {
                     fill: "#85b757"
@@ -47,8 +47,8 @@ $(function(){
             "SheboyganText" : {
                 tooltip : {
                     content : "Sheboygan Resource Center<br/>ADRC of Sheboygan County
-<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Phone: (800) 596-1919</b><br/>
-<b>TTY/TDD/Relay: (920)467-4195</b>"
+<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Phone: 1-800-596-1919</b><br/>
+<b>TTY/TDD/Relay: (920) 467-4195</b>"
                 },
                 attrs: {
                     fill : "#FFF",
@@ -70,7 +70,7 @@ $(function(){
                 attrsHover : {
                     fill: "#538BC4"
                 },
-								href: '/members'
+								href: '/milwaukee-county'
             },
             "MilwaukeeText" : {
               tooltip : {
@@ -83,7 +83,7 @@ $(function(){
                     fill : "#FFF",
                     stroke : "#FFF"
                 },
-								href: '/members'
+								href: '/milwaukee-county'
             },
             "Kenosha" : {
                tooltip : {
