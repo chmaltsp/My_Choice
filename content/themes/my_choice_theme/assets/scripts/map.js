@@ -33,8 +33,8 @@ $(function(){
             "Sheboygan" : {
                 tooltip : {
                     content : "Sheboygan Resource Center<br/>ADRC of Sheboygan County
-<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Phone: 1-800-596-1919</b><br/>
-<b>TTY/TDD/Relay: (920) 467-4195</b>"
+<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Toll Free:</b> 1-800-596-1919<br/>
+<b>TTY/TDD/Relay: 920-467-4195</b>"
                 },
                 attrs: {
                     fill: "#85b757"
@@ -47,7 +47,7 @@ $(function(){
             "SheboyganText" : {
                 tooltip : {
                     content : "Sheboygan Resource Center<br/>ADRC of Sheboygan County
-<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Phone: 1-800-596-1919</b><br/>
+<br/>650 Forest Avenue<br/>Sheboygan Falls, WI<br/><b>Toll Free:</b> 1-800-596-1919<br/>
 <b>TTY/TDD/Relay: (920) 467-4195</b>"
                 },
                 attrs: {
@@ -88,8 +88,8 @@ $(function(){
             "Kenosha" : {
                tooltip : {
                     content : "Kenosha County  <br/>ADRC of Kenosha County
-<br/>8600 Sheridan Road, Suite 500<br/>Kenosha, WI  53143 <br/><b>Phone: 1-800-472-8008</b><br/>
-<b>TTY/TDD/Relay: WI Relay 711</b>"
+<br/>8600 Sheridan Road, Suite 500<br/>Kenosha, WI  53143 <br/><b>Toll Free:</b> 1-800-472-8008<br/>
+<b>TTY/TDD/Relay:</b> WI Relay 711"
                 },
                 attrs: {
                     fill: "#dd1e47"
@@ -102,8 +102,8 @@ $(function(){
             "KenoshaText" : {
               tooltip : {
                     content : "Kenosha County  <br/>ADRC of Kenosha County
-<br/>8600 Sheridan Road, Suite 500<br/>Kenosha, WI  53143 <br/><b>Phone: 1-800-472-8008</b><br/>
-<b>TTY/TDD/Relay: WI Relay 711</b>"
+<br/>8600 Sheridan Road, Suite 500<br/>Kenosha, WI  53143 <br/><b>Toll Free:</b> 1-800-472-8008<br/>
+<b>TTY/TDD/Relay:</b> WI Relay 711"
                 },
                 attrs: {
                     fill : "#FFF",
@@ -118,8 +118,8 @@ $(function(){
             "Racine" : {
               tooltip : {
                     content : "Racine County<br/>ADRC of Racine County
-<br/>14200 Washington Avenue<br/>Sturtevant, WI  53177 <br/><b>Phone: Toll free: 1-866-219-1043</b><br/>
-<b>TTY/TDD/Relay: WI Relay 711</b>"
+<br/>14200 Washington Avenue<br/>Sturtevant, WI  53177 <br/><b>Toll Free:</b> 1-866-219-104<br/>
+<b>TTY/TDD/Relay:</b> WI Relay 711"
                 },
                 attrs: {
                     fill: "#76b83f"
@@ -132,8 +132,8 @@ $(function(){
             "RacineText" : {
               tooltip : {
                     content : "Racine County<br/>ADRC of Racine County
-<br/>14200 Washington Avenue<br/>Sturtevant, WI  53177 <br/><b>Phone: Toll free: 1-866-219-1043</b><br/>
-<b>TTY/TDD/Relay: WI Relay 711</b>"
+<br/>14200 Washington Avenue<br/>Sturtevant, WI  53177 <br/><b>Toll Free: </b>1-866-219-1043<br/>
+<b>TTY/TDD/Relay:</b> WI Relay 711"
                 },
                 attrs: {
                     fill : "#FFF",
