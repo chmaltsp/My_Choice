@@ -9,9 +9,9 @@
 </form> -->
 <form class="navbar-form" role="search" method="get" action="<?= esc_url(home_url('/')); ?>">
 		<div class="input-group">
-			<input type="search" value="<?php get_search_query(); ?>" class="form-control" placeholder="Search" name="s" id="srch-term">
+			<input type="search" value="<?php the_search_query(); ?>" class="form-control" placeholder="Search" name="s" id="srch-term">
 			<div class="input-group-btn">
-				<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i><?php _e('', 'sage'); ?></button>
+				<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
 			</div>
 		</div>
 		</form>
