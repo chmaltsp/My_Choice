@@ -21,6 +21,10 @@
                 </a>
                 <a href="<?php the_field('linkedin_page', 'option'); ?>" target="_blank"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/linkedin.png" alt="Find us on LinkedIn" target="_blank"/>
                 </a>
+                <a href="<?php the_field('pinterest_page', 'option'); ?>" target="_blank"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/pinterest.png" alt="Find us on Pintrest" />
+                </a>
+                <a href="<?php the_field('youtube_page', 'option'); ?>" target="_blank"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/youtube.png" alt="Find us on Youtube" />
+                </a>
             </div>
 
         </div>

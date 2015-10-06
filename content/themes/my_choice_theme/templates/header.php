@@ -5,12 +5,16 @@
                 <a href="<?= esc_url(home_url('/')); ?>" ><img class="logo img-responsive" src="<?php header_image(); ?>" alt="My Choice Family Care" /> </a>
             </div>
 
-            <div class="hidden-xs col-xs-4 col-xs-offset-1  col-sm-3 col-sm-offset-6 col-md-3 col-md-offset-6 col-lg-2 col-lg-offset-7 social vcenter">
+            <div class="hidden-xs col-xs-4 col-xs-offset-1  col-sm-3 col-sm-offset-6 col-md-3 col-md-offset-6 col-lg-3 col-lg-offset-6 social vcenter">
                 <a href="<?php the_field('facebook_page', 'option'); ?>" target="_blank"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/fb.png" alt="Like us on Facebook" />
                 </a>
                 <a href="<?php the_field('twitter_page', 'option'); ?>" target="_blank"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/twitter.png" alt="Follow us onTwitter" />
                 </a>
                 <a href="<?php the_field('linkedin_page', 'option'); ?>" target="_blank"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/linkedin.png" alt="Find us on LinkedIn" />
+                </a>
+                <a href="<?php the_field('pinterest_page', 'option'); ?>" target="_blank"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/pinterest.png" alt="Find us on Pintrest" />
+                </a>
+                <a href="<?php the_field('youtube_page', 'option'); ?>" target="_blank"> <img class="social-btn" src="../content/themes/my_choice_theme/assets/images/youtube.png" alt="Find us on Youtube" />
                 </a>
             </div>
 
