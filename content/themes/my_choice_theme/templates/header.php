@@ -5,7 +5,7 @@
                 <a href="<?= esc_url(home_url('/')); ?>" ><img class="logo img-responsive" src="<?php header_image(); ?>" alt="My Choice Family Care" /> </a>
             </div>
 
-            <div class="hidden-xs col-xs-4 col-xs-offset-1  col-sm-3 col-sm-offset-6 col-md-3 col-md-offset-6 col-lg-3 col-lg-offset-6 social vcenter">
+            <div class="hidden-xs col-xs-4 col-xs-offset-1  col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-5 col-lg-3 col-lg-offset-6 social vcenter">
                 <a href="<?php the_field('facebook_page', 'option'); ?>" target="_blank"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/fb.png" alt="Like us on Facebook" />
                 </a>
                 <a href="<?php the_field('twitter_page', 'option'); ?>" target="_blank"><img class="social-btn" src="../content/themes/my_choice_theme/assets/images/twitter.png" alt="Follow us onTwitter" />
